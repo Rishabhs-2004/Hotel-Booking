@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Rooms Header -->
+<div class="container-fluid bg-primary py-5 mb-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-white">
+                <h1 class="display-4 mb-4">Our Rooms</h1>
+                <p class="lead mb-4">Choose from our selection of luxurious rooms and suites designed for your comfort and relaxation.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Rooms List -->
+<div class="container mb-5">
+    <div class="row mb-5">
+        <div class="col-lg-8 mb-4">
+            <div class="card shadow-sm">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_1280.jpg" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Deluxe Room">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <div>
+                                <h3 class="card-title">Deluxe Room</h3>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-2">King Bed</span>
+                                    <span class="badge bg-secondary me-2">City View</span>
+                                    <span class="badge bg-info">35m²</span>
+                                </div>
+                                <p class="card-text">Our Deluxe Room offers a spacious and comfortable environment with a king-size bed, modern amenities, and a stunning city view.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i> Free WiFi</li>
+                                    <li><i class="fas fa-check text-success me-2"></i> Air Conditioning</li>
+                                    <li><i class="fas fa-check text-success me-2"></i> Flat-screen TV</li>
+                                    <li><i class="fas fa-check text-success me-2"></i> Mini Bar</li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="text-primary mb-0">$150 <small class="text-muted">/ night</small></h4>
+                                    <a href="{{ url_for('booking', room_id=1) }}" class="btn btn-primary">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card bg-light h-100">
+                <div class="card-body">
+                    <h4 class="mb-4">Room Amenities</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-bed text-primary me-2"></i> Comfortable Bedding</li>
+                        <li class="mb-2"><i class="fas fa-bath text-primary me-2"></i> Private Bathroom</li>
+                        <li class="mb-2"><i class="fas fa-coffee text-primary me-2"></i> Coffee Maker</li>
+                        <li class="mb-2"><i class="fas fa-concierge-bell text-primary me-2"></i> Room Service</li>
+                        <li class="mb-2"><i class="fas fa-wifi text-primary me-2"></i> High-speed WiFi</li>
+                        <li class="mb-2"><i class="fas fa-tv text-primary me-2"></i> Smart TV</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-lg-8 mb-4">
+            <div class="card shadow-sm">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="https://cdn.pixabay.com/photo/2020/10/18/09/16/bedroom-5664221_1280.jpg" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Executive Suite">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <div>
+                                <h3 class="card-title">Executive Suite</h3>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-2">King Bed</span>
+                                    <span class="badge bg-secondary me-2">Panoramic View</span>
+                                    <span class="badge bg-info">55m²</span>
+                                </div>
+                                <p class="card-text">Our Executive Suite offers a luxurious experience with a separate living area, king-size bed, and panoramic views of the city skyline.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i> Free WiFi</li>
+                                    <li><i class="fas fa-check text-success me-2"></i> Air Conditioning</li>
+                                    <li><i class="fas fa-check text-success me-2"></i> Separate Living Area</li>
+                                    <li><i class="fas fa-check text-success me-2"></i> Premium Toiletries</li>
+                                    <li><i class="fas fa-check text-success me-2"></i> Complimentary Breakfast</li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="text-primary mb-0">$250 <small class="text-muted">/ night</small></h4>
+                                    <a href="{{ url_for('booking', room_id=2) }}" class="btn btn-primary">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card bg-light h-100">
+                <div class="card-body">
+                    <h4 class="mb-4">Executive Benefits</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-utensils text-primary me-2"></i> Complimentary Breakfast</li>
+                        <li class="mb-2"><i class="fas fa-glass-martini-alt text-primary me-2"></i> Welcome Drink</li>
+                        <li class="mb-2"><i class="fas fa-concierge-bell text-primary me-2"></i> Priority Room Service</li>
+                        <li class="mb-2"><i class="fas fa-spa text-primary me-2"></i> Spa Discount</li>
+                        <li class="mb-2"><i class="fas fa-car text-primary me-2"></i> Airport Transfer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-lg-8 mb-4">
+            <div class="card shadow-sm">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="https://cdn.pixabay.com/photo/2018/02/24/17/17/window-3178666_1280.jpg" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Family Room">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <div>
+                                <h3 class="card-title">Family Room</h3>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-2">Two Queen Beds</span>
+                                    <span class="badge bg-secondary me-2">Garden View</span>
+                                    <span class="badge bg-info">45m²</span>
+                                </div>
+                                <p class="card-text">Our Family Room is perfect for families with two queen beds, extra space, and all the amenities needed for a comfortable stay.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i> Free WiFi</li>
+                                    <li><i class="fas fa-check text-success me-2"></i> Air Conditioning</li>
+                                    <li><i class="fas fa-check text-success me-2"></i> Flat-screen TV</li>
+                                    <li><i class="fas fa-check text-success me-2"></i> Mini Fridge</li>
+                                    <li><i class="fas fa-check text-success me-2"></i> Extra Space for Children</li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="text-primary mb-0">$200 <small class="text-muted">/ night</small></h4>
+                                    <a href="{{ url_for('booking', room_id=3) }}" class="btn btn-primary">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card bg-light h-100">
+                <div class="card-body">
+                    <h4 class="mb-4">Family Benefits</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-child text-primary me-2"></i> Kids Stay Free</li>
+                        <li class="mb-2"><i class="fas fa-utensils text-primary me-2"></i> Kids Menu Available</li>
+                        <li class="mb-2"><i class="fas fa-gamepad text-primary me-2"></i> Access to Kids Club</li>
+                        <li class="mb-2"><i class="fas fa-swimming-pool text-primary me-2"></i> Family Pool Access</li>
+                        <li class="mb-2"><i class="fas fa-baby-carriage text-primary me-2"></i> Baby Cot Available</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="container-fluid bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-4">Need Help?</h2>
+                <p class="lead mb-4">Our staff is always ready to help you find the perfect room for your stay.</p>
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-phone-alt text-primary me-3 fa-2x"></i>
+                    <div>
+                        <h5 class="mb-0">Call Us</h5>
+                        <p class="mb-0">+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-envelope text-primary me-3 fa-2x"></i>
+                    <div>
+                        <h5 class="mb-0">Email Us</h5>
+                        <p class="mb-0">bookings@hotelbooking.com</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-map-marker-alt text-primary me-3 fa-2x"></i>
+                    <div>
+                        <h5 class="mb-0">Visit Us</h5>
+                        <p class="mb-0">123 Hotel Street, City, Country</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="mb-4">Send Us a Message</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
